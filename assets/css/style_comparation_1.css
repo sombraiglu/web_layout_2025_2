@@ -75,7 +75,7 @@ article {
 }
 article:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px rgba(255, 244, 145, 0.638);
 }
 article h3 a {
   color: var(--primary-dark);
