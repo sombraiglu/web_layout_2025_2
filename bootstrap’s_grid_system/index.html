@@ -11,53 +11,172 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="p-3">
-    <!-- Paste exercise markup here -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
-          <div class="col"><div class="border p-3">1</div></div>
-          <div class="col"><div class="border p-3">2</div></div>
-          <div class="col"><div class="border p-3">3</div></div>
-          <div class="col"><div class="border p-3">4</div></div>
+      <a class="navbar-brand" href="#">Brand</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <body>
+    <!-- Button variants -->
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+
+    <!-- Outline buttons -->
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+
+    <!-- Button sizes -->
+    <button type="button" class="btn btn-primary btn-lg">Large</button>
+    <button type="button" class="btn btn-primary">Default</button>
+    <button type="button" class="btn btn-primary btn-sm">Small</button>
+    <div class="container-fluid">
+      <!-- Header -->
+      <header class="row bg-primary text-white py-4">
+        <div class="col-12">
+          <h1 class="text-center">MY PORTFOLIO 😎🤟</h1>
         </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row g-3">
-        <main class="col-12 col-md-8">
-          <h2>Main Content Area</h2>
-          <p>2/3 width from md (≥768px), full width below.</p>
-        </main>
-        <aside class="col-12 col-md-4">
-          <h3>Sidebar</h3>
-          <p>1/3 width from md, stacks below on small screens.</p>
+      </header>
+
+      <!-- Main Content -->
+      <main class="row py-4 g-4">
+        <!-- Hero Section -->
+        <section class="col-lg-8">
+          <div class="bg-light p-4 rounded h-100">
+            <h2>Welcome to My Portfolio</h2>
+            <p>
+              This is a hero section that showcases my work and introduces
+              visitors to my projects.
+            </p>
+          </div>
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="col-lg-4">
+          <div class="bg-secondary text-white p-3 rounded h-100">
+            <h3>About Me</h3>
+            <p>
+              Soy estudiante de diseño gráfico, y mi pasión por el cine y el
+              arte ha sido una fuente constante de inspiración en mi camino
+              creativo. Me encanta explorar formas no tradicionales de
+              expresión, y los collages se han convertido en una de mis
+              herramientas favoritas para diseñar. El color es otro elemento
+              fundamental en mi trabajo, lo utilizo no solo para captar la
+              atención, sino para transmitir emociones
+            </p>
+          </div>
         </aside>
-      </div>
+      </main>
+
+      <!-- Projects Grid -->
+      <section class="row">
+        <div class="col-12 mb-3">
+          <h2>My Projects</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">CÁTALOGO EXPO</h5>
+                <p class="card-text">Description of project 1.</p>
+              </div>
+              <img
+                src="assets/img_portfolio/cátalogo_expo.png"
+                alt="cátalogo_expo"
+                width="640"
+                height="360"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-text">Description of project 2.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">Description of project 3.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Project 4</h5>
+                <p class="card-text">Description of project 4.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    <div class="container">
-      <!-- Offset columns -->
-      <div class="row">
-        <div class="col-md-4 offset-md-4">
-          <h3>Centered Content</h3>
-          <p>This column is centered using the offset class.</p>
+    <form>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="Enter email"
+        />
+        <div class="form-text">
+          We'll never share your email with anyone else.
         </div>
       </div>
 
-      <!-- Nested rows -->
-      <div class="row">
-        <div class="col-md-6">
-          <h4>Section 1</h4>
-          <div class="row">
-            <div class="col-6"><p>Sub-column 1</p></div>
-            <div class="col-6"><p>Sub-column 2</p></div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <h4>Section 2</h4>
-          <p>Adjacent content with nested grid structure.</p>
-        </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" />
       </div>
-    </div>
+
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="remember" />
+        <label class="form-check-label" for="remember">Remember me</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
   </body>
+  <footer>
+    <p>
+      © 2025 — Web Atelier · All external links belong to their respective
+      owners.
+    </p>
+  </footer>
 </html>
